@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LED Image Display</title>
+  <meta http-equiv="refresh" content="5">
+  <style>
+    body { margin: 0; background: black; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    img { max-width: 100%; max-height: 100%; }
+  </style>
+</head>
+<body>
+  {% if image_url %}
+    <img src="{{ image_url }}" alt="LED Image" />
+  {% else %}
+    <h2 style="color: white;">No image uploaded</h2>
+  {% endif %}
+</body>
+</html>
